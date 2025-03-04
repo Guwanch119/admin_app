@@ -1,0 +1,163 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block content %}
+
+
+
+<div class="right_col" role="main">
+    <div class="">
+        <div class="page-title">
+            <div class="title_left">
+                <h3>Projects <small>Listing design</small></h3>
+            </div>
+
+            <div class="title_right">
+                <div class="col-md-2 col-sm-9  form-group pull-right top_search">
+                    <div class="input-group">
+                        <a href="{% url 'add_user' %}"> <button type="button"
+                                class="btn btn-success btn-sm">+ Creat work</button></a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="x_panel">
+                    <div class="x_content">
+                        <div class="animated flipInY col-lg-3 col-md-3 col-sm-6">
+                            <div class="tile-stats" style="background-color: blue;">
+                                <div class="icon"><i class="fa fa-folder-open"></i>
+                                </div>
+                                <div class="count">23</div>
+
+                                <h3>All works</h3>
+                            </div>
+                        </div>
+                        <div class="animated flipInY col-lg-3 col-md-3 col-sm-6">
+                            <div class="tile-stats" style="background-color: green;">
+                                <div class="icon"><i class="fa fa-folder-open"></i>
+                                </div>
+                                <div class="count">15</div>
+
+                                <h3>Complated works</h3>
+                            </div>
+                        </div>
+                        <div class="animated flipInY col-lg-3 col-md-3 col-sm-6">
+                            <div class="tile-stats" style="background-color: red;">
+                                <div class="icon"><i class="fa fa-folder-open"></i>
+                                </div>
+                                <div class="count">10</div>
+
+                                <h3>Not complated </h3>
+                            </div>
+                        </div>
+                        
+
+
+
+                        <!-- start project list -->
+                        <table class="table table-striped projects">
+                            <thead>
+                                <tr>
+                                    <th style="width: 1%">#</th>
+                                    <th style="width: 20%">Project Name</th>
+                                    <th>Excutor</th>
+                                    <th>Project Progress</th>
+                                    <th>Priority</th>
+                                    <th style="width: 20%">#Edit</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>#</td>
+                                    <td>
+                                        <a>Pesamakini Backend UI</a>
+                                        <br />
+                                        <small>Created 01.01.2015</small>
+                                    </td>
+                                    <td>
+                                        Aman Amanow
+                                    </td>
+                                    <td class="project_progress">
+                                        <div class="progress progress_sm">
+                                            <div class="progress-bar bg-green" role="progressbar"
+                                                data-transitiongoal="57"></div>
+                                        </div>
+                                        <small>57% Complete</small>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn"
+                                            style="background-color: red; width: 80px; height: 40px;"></button>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="btn btn-primary btn-xs"><i class="fa fa-folder"></i> View</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#</td>
+                                    <td>
+                                        <a>Pesamakini Backend UI</a>
+                                        <br />
+                                        <small>Created 01.01.2015</small>
+                                    </td>
+                                    <td>
+                                        Berdi Berdiyew
+                                    </td>
+                                    <td class="project_progress">
+                                        <div class="progress progress_sm">
+                                            <div class="progress-bar bg-green" role="progressbar"
+                                                data-transitiongoal="47"></div>
+                                        </div>
+                                        <small>47% Complete</small>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn"
+                                            style="background-color: yellow; width: 80px; height: 40px;"></button>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="btn btn-primary btn-xs"><i class="fa fa-folder"></i> View
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#</td>
+                                    <td>
+                                        <a>Pesamakini Backend UI</a>
+                                        <br />
+                                        <small>Created 01.01.2015</small>
+                                    </td>
+                                    <td>
+                                        Geldi Geldiyew
+                                    </td>
+                                    <td class="project_progress">
+                                        <div class="progress progress_sm">
+                                            <div class="progress-bar bg-green" role="progressbar"
+                                                data-transitiongoal="77"></div>
+                                        </div>
+                                        <small>77% Complete</small>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn"
+                                            style="background-color: green; width: 80px; height: 40px;"></button>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="btn btn-primary btn-xs"><i class="fa fa-folder"></i> View
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- end project list -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
