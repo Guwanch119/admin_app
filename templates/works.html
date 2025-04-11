@@ -14,7 +14,7 @@
             <div class="title_right">
                 <div class="col-md-2 col-sm-9  form-group pull-right top_search">
                     <div class="input-group">
-                        <a href="{% url 'add_user' %}"> <button type="button"
+                        <a href="{% url 'works_add' %}"> <button type="button"
                                 class="btn btn-success btn-sm">+ Creat work</button></a>
                         </span>
                     </div>
@@ -94,7 +94,7 @@
                                             style="background-color: red; width: 80px; height: 40px;"></button>
                                     </td>
                                     <td>
-                                        <a href="#" class="btn btn-primary btn-xs"><i class="fa fa-folder"></i> View</a>
+                                        <a href="{% url 'works_views' %}" class="btn btn-primary btn-xs"><i class="fa fa-folder"></i> View</a>
                                     </td>
                                 </tr>
                                 <tr>
